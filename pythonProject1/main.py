@@ -1,0 +1,63 @@
+from selenium import webdriver
+import time
+import unittest
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome(executable_path="c:\chromedriver\chromedriver.exe")
+
+driver.get("https://elang.app/ru/contacts")
+
+el1 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div/div/div/form/div[3]/div[1]/input")
+el1.send_keys(1111)
+
+el2 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div/div/div/form/div[3]/div[2]/input")
+el2.send_keys("1111@11.11")
+time.sleep(1)
+# 1000 characters
+el3 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div/div/div/form/div[4]/textarea")
+el3.send_keys("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111")
+time.sleep(2)
+#send
+el4 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div/div/div/form/button")
+el4.click()
+time.sleep(1)
+el5 = driver.find_element_by_xpath("/html/body/div/nav/div/div[3]/div[1]/div/a[4]")
+el5.click()
+time.sleep(2)
+el6 = driver.find_element_by_xpath("/html/body/div/nav/div/div[3]/div[1]/div/a[3]")
+el6.click()
+time.sleep(2)
+el7 = driver.find_element_by_xpath("/html/body/div/div[1]/div/div[1]/div[1]/a[1]")
+el7.click()
+time.sleep(1)
+el8 = driver.find_element_by_xpath("/html/body/div/div[1]/div/div[1]/div[1]/a[2]")
+el8.click()
+time.sleep(1)
+el9 = driver.find_element_by_xpath("/html/body/div/div[1]/div/div[1]/div[1]/a[3]")
+el9.click()
+time.sleep(1)
+el10 = driver.find_element_by_xpath("/html/body/div/nav/div/div[3]/div[1]/div/a[2]")
+el10.click()
+time.sleep(2)
+el11 = driver.find_element_by_xpath("/html/body/div/div[1]/div/div/div[1]/div[3]/div/a")
+el11.click()
+time.sleep(1)
+el12 = driver.find_element_by_xpath("/html/body/div/nav/div/div[3]/div[1]/div/a[1]")
+el12.click()
+time.sleep(2)
+el13 = driver.find_element_by_xpath("/html/body/div/div[1]/div/div/div[1]/div[3]/div/a")
+el13.click()
+time.sleep(1)
+el14 = driver.find_element_by_xpath("/html/body/div/div[4]/div/div/div[2]/div/div[5]/div[1]")
+el14.click()
+time.sleep(1)
+el15 = driver.find_element_by_xpath("/html/body/div/div[4]/div/div/div[2]/div/div[7]/div[1]")
+el15.click()
+time.sleep(1)
+el16 = driver.find_element_by_xpath("/html/body/div/div[4]/div/div/div[2]/div/div[9]/div[1]")
+el16.click()
+time.sleep(1)
+el17 = driver.find_element_by_xpath("/html/body/div/nav/div/div[1]/div[1]/a/img")
+el17.click()
+time.sleep(2)
+
